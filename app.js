@@ -8,7 +8,7 @@ const sqlite3 = require("sqlite3");
 const app = express();
 const dbPath = path.join(__dirname, "Database.db");
 app.use(cors());
-const PORT=process.env.PORT || 4002
+const PORT=process.env.PORT || "https://cipherschoolsassignment-api.onrender.com"
 let db = null;
 app.use(express.static(path.join(__dirname,"public")))
 const initializeDBAndServer = async () => {
